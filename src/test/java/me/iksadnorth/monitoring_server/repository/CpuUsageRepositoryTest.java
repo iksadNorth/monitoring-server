@@ -3,6 +3,7 @@ package me.iksadnorth.monitoring_server.repository;
 import lombok.extern.slf4j.Slf4j;
 import me.iksadnorth.monitoring_server.entity.CpuUsage;
 import me.iksadnorth.monitoring_server.entity.CpuUsageSummary;
+import me.iksadnorth.monitoring_server.util.EnableQuerydslTest;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import java.util.List;
 
 @Slf4j
 @DataJpaTest
+@EnableQuerydslTest
 class CpuUsageRepositoryTest {
     @Autowired
     private CpuUsageRepository cpuUsageRepository;
