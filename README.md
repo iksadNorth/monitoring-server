@@ -13,7 +13,7 @@
 - 추가로 MariaDB 역시, Amazon RDS를 이용해서 미리 스키마와 테스트 데이터를 설정 및 적재했습니다.
 - 때문에, 아래 명령어 만으로 운영 환경[prod]에서의 프로젝트를 실행할 수 있습니다.
 ```text
-java -Dspring.datasource.password={Email에_첨부드린_DB_Password} -Dspring.profiles.default=prod -jar build/libs/monitoring-server-0.0.1-SNAPSHOT.jar
+java -Dspring.profiles.default=prod -jar build/libs/monitoring-server-0.0.1-SNAPSHOT.jar
 ```
 
 
